@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - EcoSoul</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="style/about.css" />
+  <link rel="stylesheet" href="style/public.css" />
+</head>
+
+<body>
+
+  <header class="hdr">
+    <div class="logo"><a href="index.html" translate="no">EcoSoul</a></div>
+    <button class="menu-tgl">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active-page">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculate.html">Calculator</a>
+      <a href="index.html#contact-us">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main about-main">
+    <div class="content-sec">
+      <section class="sec about-intro">
+        <h2>Who We Are</h2>
+        <p>
+          EcoSoul is a community of passionate individuals dedicated to protecting the environment. Our mission is to
+          inspire, educate, and take action to restore nature and promote sustainability worldwide. Together, we plant
+          the seeds for a greener future.
+        </p>
+      </section>
+
+      <section class="sec about-values">
+        <h2>Our Core Values</h2>
+        <ul>
+          <li><strong>Sustainability:</strong> We promote harmony between humans and nature.</li>
+          <li><strong>Community:</strong> We believe in the power of collective action.</li>
+          <li><strong>Transparency:</strong> We operate openly and honestly.</li>
+          <li><strong>Innovation:</strong> We embrace new ideas to improve environmental impact.</li>
+        </ul>
+      </section>
+
+      <section class="sec about-team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <h3>Anna Kowalska</h3>
+            <p>Founder & CEO — passionate environmentalist and community leader.</p>
+          </div>
+          <div class="team-member">
+            <h3>Michael Nowak</h3>
+            <p>Project Manager — expert in sustainable forestry and project coordination.</p>
+          </div>
+          <div class="team-member">
+            <h3>Kasia Wisniewska</h3>
+            <p>Communications Lead — storyteller and eco-education advocate.</p>
+          </div>
+          <div class="team-member">
+            <h3>John Smith</h3>
+            <p>Volunteer Coordinator — connecting communities and organizing events.</p>
+          </div>
+          <div class="team-member">
+            <h3>Emily Johnson</h3>
+            <p>Research Analyst — focused on environmental data and impact measurement.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="sec about-impact">
+        <h2>Our Impact So Far</h2>
+        <div class="impact-counters">
+          <div class="counter">
+            <span class="count" data-target="4731">0</span>
+            <p>Trees Planted</p>
+          </div>
+          <div class="counter">
+            <span class="count" data-target="1286">0</span>
+            <p>Volunteers Engaged</p>
+          </div>
+          <div class="counter">
+            <span class="count" data-target="29">0</span>
+            <p>Projects Completed</p>
+          </div>
+          <div class="counter">
+            <span class="count" data-target="31">0</span>
+            <p>Communities Impacted</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec about-chart">
+        <h2>Our Achievements</h2>
+        <canvas id="achievementsChart" width="500" height="350"></canvas>
+      </section>
+
+      <div id="bonus" style="display: none;" class="sec about-chart">
+        <img src="assets/alpacino.jpg" alt="Al Pacino"/>
+        <!-- <img src="assets/kp.jpg" alt="KP"/> -->
+      </div>
+    </div>
+    <button id="scrollTopBtn" aria-label="Scroll to top">&#10095;</button>
+    
+</main>
+
+  <footer class="ftr">
+    <div class="footer-content">
+      <p>&copy; 2025 EcoSoul | All rights reserved</p>
+      <p>Autor: Feliks Owczarek</p>
+    </div>
+  </footer>
+
+  <script src="scripts/about.js"></script>
+  <script src="scripts/phone-menu.js"></script>
+</body>
+
+</html>

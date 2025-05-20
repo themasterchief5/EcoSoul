@@ -1,0 +1,162 @@
+.sec a {
+  color: rgb(143, 77, 143);
+  text-decoration: none;
+}
+
+.sec a:hover {
+  color: rgb(173, 72, 173);
+  text-decoration: underline;
+}
+
+.nav a {
+  color: aliceblue;
+}
+
+.nav a:hover {
+  color: #9c6add;
+}
+
+.slider {
+  position: relative;
+  height: 92vh;
+  overflow: hidden;
+}
+
+.slide {
+  mask-image: linear-gradient(to bottom, #1e1b2b 85%, transparent 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.act {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide .txt {
+  position: absolute;
+  bottom: 9vh;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  max-width: 80%;
+  text-align: center;
+  user-select: none;
+}
+
+.ctrl {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ctrl span {
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+  padding: 0 20px;
+  user-select: none;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.main {
+  padding: 100px 40px 60px;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.content-sec {
+  margin-top: 30px;
+}
+
+.sec {
+  margin-bottom: 80px;
+  padding: 30px;
+  border: 2px solid rgb(71, 30, 71);
+  border-radius: 10px;
+}
+
+.sec h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #9c6add;
+}
+
+.sec p,
+.sec li {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.sec ul {
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+input,
+textarea {
+  color: aliceblue;
+  padding: 12px;
+  border: none;
+  background: #4c4666;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  min-height: 120px;
+  resize: none;
+}
+
+button,
+.btn {
+  background: #9c6add;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+}
+
+textarea::placeholder {
+  color: rgb(144, 135, 167);
+  font-family: 'Roboto', sans-serif;
+}
+button:hover,
+.btn:hover {
+  background: #7c54a7;
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 100vw;
+    padding: 50px 20px 30px;
+  }
+}

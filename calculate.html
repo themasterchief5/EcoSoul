@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CO₂ Calculator - EcoSoul</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="style/public.css" />
+  <link rel="stylesheet" href="style/calculate.css" />
+</head>
+
+<body>
+  <header class="hdr">
+    <div class="logo"><a href="index.html" translate="no">EcoSoul</a></div>
+    <button class="menu-tgl">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculate.html" class="active-page">Calculator</a>
+      <a href="index.html#contact-us">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="content-sec">
+      <section class="sec">
+        <h2>Carbon Footprint Calculator</h2>
+        <p>Estimate your carbon footprint based on your lifestyle habits and learn how to reduce it.</p>
+
+        <form id="carbon-form">
+          <label for="transport">Kilometers driven per week:</label>
+          <input type="number" id="transport" required placeholder="e.g. 100"/>
+
+          <label for="meat">How many meat meals per week?</label>
+          <input type="number" id="meat" required placeholder="e.g. 7" />
+
+          <label for="flights">Short flights taken this year:</label>
+          <input type="number" id="flights" required placeholder="e.g. 2" />
+
+          <div id="calc-buttons">
+            <button type="submit">Calculate</button>
+            <button type="button" id="reset-btn" style="margin-left: 10px;">Reset</button>
+          </div>
+        </form>
+
+        <div id="result" class="result-box"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="ftr">
+    <div class="footer-content">
+      <p>&copy; 2025 EcoSoul | All rights reserved.</p>
+      <p>Autor: Feliks Owczarek</p>
+    </div>
+  </footer>
+
+</body>
+<script src="scripts/calculate.js"></script>
+<script src="scripts/phone-menu.js"></script>
+</html>

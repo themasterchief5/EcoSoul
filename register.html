@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - EcoSoul</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="style/register.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="box">
+      <div class="img-side">
+        <div class="top-bar">
+          <div class="brand" translate="no">EcoSoul</div>
+        </div>
+        <div class="bottom-txt">
+          <p>Reconnect with Nature,<br>Rediscover Yourself</p>
+          <div class="slider">
+            <span class="arrow">&#10094;</span>
+            <span class="dot"></span><span class="dot"></span><span class="dot active"></span><span
+              class="dot"></span><span class="dot"></span>
+            <span class="arrow">&#10095;</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-side">
+        <section class="back-con">
+          <p class="back-btn">&#10095;</p>
+        </section>
+        <form action="index.html">
+          <h1>Create an account</h1>
+          <p>Already have an account? <a href="login.html">Log in</a></p>
+          <form>
+            <div class="row">
+              <input type="text" placeholder="First name" id="name" required>
+              <input type="text" placeholder="Last name" id="surname" required>
+            </div>
+            <input type="email" placeholder="Email" id="email" required>
+            <select id="country">
+              <option value="Poland">Poland</option>
+              <option value="USA">USA</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Spain">Spain</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+
+            <input type="tel" placeholder="Phone number" id="phone" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Street and house number" required>
+            <input type="text" placeholder="Postal code" id="postcode" required>
+            <div class="pass-field">
+              <input type="password" placeholder="Enter your password" id="password" required>
+
+              <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white"
+                stroke-width="2" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <span class="pass-info">Password must be at least 8 characters and include one uppercase letter, one number,
+              and one special character.</span>
+            <label class="check">
+              <input type="checkbox" checked required> I agree to the <a href="privacy.html">Terms & Conditions</a>
+            </label>
+            <button type="submit" class="btn-main">Create account</button>
+          </form>
+          <div class="alt">Or register with</div>
+          <div class="btn-row">
+            <a href="https://www.google.pl/login" target="_blank" class="btn-google">
+              <img src="https://img.icons8.com/color/20/000000/google-logo.png" /> Google
+            </a>
+            <a href="https://www.apple.com/login" target="_blank" class="btn-apple">
+              <img src="https://img.icons8.com/ios-filled/20/ffffff/mac-os.png" /> Apple
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+<script src="scripts/register.js"></script>
+<script src="scripts/login-slider.js"></script>
+
+</html>

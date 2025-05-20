@@ -1,0 +1,22 @@
+input[type="email"],
+.pass-field {
+    margin-bottom: 3vh !important;
+}
+
+button {
+    margin-bottom: 10vh;
+}
+
+.box {
+    transform: scale(1.1) !important;
+}
+
+.form-side {
+    padding: 80px 60px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .back-con {
+        display: none;
+    }
+}

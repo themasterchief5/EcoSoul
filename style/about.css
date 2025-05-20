@@ -1,0 +1,182 @@
+.about-main {
+  padding-top: 100px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.about-intro p,
+.about-values ul,
+.about-team {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.about-values ul {
+  list-style: inside disc;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-member {
+  max-width: 280px;
+  background: rgba(30, 27, 43, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin: 10px 0 8px;
+  color: #9c6add;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.sec h2 {
+  color: #9c6add;
+  margin-bottom: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.about-impact {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.impact-counters {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.about-team h2 {
+  text-align: center;
+}
+
+#bonus {
+  display: flex;
+  align-items: flex-start; 
+}
+#bonus img {
+  border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.counter {
+  background: rgba(30, 27, 43, 0.5);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  flex: 1 1 160px;
+  max-width: 200px;
+  color: #9c6add;
+  font-weight: bold;
+  font-size: 2.5rem;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.counter p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.counter:hover {
+  transform: scale(1.1);
+}
+
+.about-chart {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#achievementsChart {
+  border: 1.5px solid rgba(156, 106, 221, 0.5);
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 90%;
+  }
+
+  .impact-counters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .sec {
+    padding-left: 10px;
+  }
+
+  .about-chart {
+    overflow-x: auto;
+  }
+  #bonus img {
+    height: 300px;
+  }
+  .impact-counters{
+    gap: 10px;
+  }
+  .counter{
+    flex: none;
+    padding: 10px 20px;
+    width: 35vw;
+  }
+}

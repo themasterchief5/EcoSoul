@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in - EcoSoul</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="style/register.css" />
+  <link rel="stylesheet" href="style/login.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="box">
+      <div class="img-side">
+        <div class="top-bar">
+          <div class="brand" translate="no">EcoSoul</div>
+        </div>
+        <div class="bottom-txt">
+          <p>Reconnect with Nature,<br>Rediscover Yourself</p>
+          <div class="slider">
+            <span class="arrow">&#10094;</span>
+            <span class="dot"></span><span class="dot"></span><span class="dot active"></span><span
+              class="dot"></span><span class="dot"></span>
+            <span class="arrow">&#10095;</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-side">
+        <section class="back-con">
+          <p class="back-btn">&#10095;</p>
+        </section>
+        <form action="index.html">
+          <h1>Log in to continue</h1>
+          <p>Don't have an account? <a href="register.html">Sing Up</a></p>
+          <form>
+            <input type="email" placeholder="Email" required>
+            <div class="pass-field">
+              <input type="password" placeholder="Enter your password" id="password" required>
+              <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white"
+                stroke-width="2" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <button type="submit" class="btn-main">Log in</button>
+          </form>
+          <div class="alt">Or log in with</div>
+          <div class="btn-row">
+            <a href="https://www.google.pl/login" target="_blank" class="btn-google">
+              <img src="https://img.icons8.com/color/20/000000/google-logo.png" /> Google
+            </a>
+            <a href="https://www.apple.com/login" target="_blank" class="btn-apple">
+              <img src="https://img.icons8.com/ios-filled/20/ffffff/mac-os.png" /> Apple
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+<script src="scripts/login-slider.js"></script>
+
+</html>
