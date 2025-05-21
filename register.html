@@ -33,48 +33,46 @@
         <form action="index.html">
           <h1>Create an account</h1>
           <p>Already have an account? <a href="login.html">Log in</a></p>
-          <form>
-            <div class="row">
-              <input type="text" placeholder="First name" id="name" required>
-              <input type="text" placeholder="Last name" id="surname" required>
-            </div>
-            <input type="email" placeholder="Email" id="email" required>
-            <select id="country">
-              <option value="Poland">Poland</option>
-              <option value="USA">USA</option>
-              <option value="Germany">Germany</option>
-              <option value="France">France</option>
-              <option value="Spain">Spain</option>
-              <option value="United Kingdom">United Kingdom</option>
-            </select>
+          <div class="row">
+            <input type="text" placeholder="First name" id="name" required>
+            <input type="text" placeholder="Last name" id="surname" required>
+          </div>
+          <input type="email" placeholder="Email" id="email" required>
+          <select id="country">
+            <option value="Poland">Poland</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="United Kingdom">United Kingdom</option>
+          </select>
 
-            <input type="tel" placeholder="Phone number" id="phone" required>
-            <input type="text" placeholder="City" required>
-            <input type="text" placeholder="Street and house number" required>
-            <input type="text" placeholder="Postal code" id="postcode" required>
-            <div class="pass-field">
-              <input type="password" placeholder="Enter your password" id="password" required>
+          <input type="tel" placeholder="Phone number" id="phone" required>
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="Street and house number" required>
+          <input type="text" placeholder="Postal code" id="postcode" required>
+          <div class="pass-field">
+            <input type="password" placeholder="Enter your password" id="password" required>
 
-              <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white"
-                stroke-width="2" viewBox="0 0 24 24">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
-                <circle cx="12" cy="12" r="3" />
-              </svg>
-            </div>
-            <span class="pass-info">Password must be at least 8 characters and include one uppercase letter, one number,
-              and one special character.</span>
-            <label class="check">
-              <input type="checkbox" checked required> I agree to the <a href="privacy.html">Terms & Conditions</a>
-            </label>
-            <button type="submit" class="btn-main">Create account</button>
-          </form>
+            <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="white"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <span class="pass-info">Password must be at least 8 characters and include one uppercase letter, one number,
+            and one special character.</span>
+          <label class="check">
+            <input type="checkbox" checked required> I agree to the <a href="privacy.html">Terms & Conditions</a>
+          </label>
+          <button type="submit" class="btn-main">Create account</button>
           <div class="alt">Or register with</div>
           <div class="btn-row">
             <a href="https://www.google.pl/login" target="_blank" class="btn-google">
-              <img src="https://img.icons8.com/color/20/000000/google-logo.png" /> Google
+              <img src="https://img.icons8.com/color/20/000000/google-logo.png" alt="Google login" /> Google
             </a>
             <a href="https://www.apple.com/login" target="_blank" class="btn-apple">
-              <img src="https://img.icons8.com/ios-filled/20/ffffff/mac-os.png" /> Apple
+              <img src="https://img.icons8.com/ios-filled/20/ffffff/mac-os.png" alt="Apple login" /> Apple
             </a>
           </div>
         </form>
@@ -83,8 +81,8 @@
   </main>
 
   <footer></footer>
+  <script src="scripts/register.js"></script>
+  <script src="scripts/login-slider.js"></script>
 </body>
-<script src="scripts/register.js"></script>
-<script src="scripts/login-slider.js"></script>
 
 </html>
